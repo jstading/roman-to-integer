@@ -17,21 +17,18 @@ class Solution(object):
                 answer = answer - integers[n]
             n+=1
 
-        if integers[-1] >= integers[-2]:
-            answer = answer + integers[-1]
-        else:
-            answer = answer - integers[-1]
+        answer = answer + integers[-1]
 
         return answer
 
-##############################
+####TEST CASES#####################
 #s = "III"
 #s = "LVIII"
-s = "MCMXCIV"
+#s = "MCMXCIV"
 #s = "DCXXI"
 #Returns should be 3, 58, 1994, 621
-##############################
+###################################
 
-#s = "CMVII"
+s = "MCMLXXXI"
 Solution = Solution()
 print(Solution.numerals(s))
